@@ -1,5 +1,6 @@
 package edu.eksamensoevelse.productorder;
 
+import edu.eksamensoevelse.delivery.Delivery;
 import edu.eksamensoevelse.product.Product;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -17,5 +18,7 @@ public class ProductOrder {
 
     @ManyToOne
     Product product;
+    @ManyToOne
+    Delivery delivery;
     private int quantity;
 }

@@ -35,18 +35,12 @@ public class ProductController {
     }
 
     @PutMapping("/{id}")
-    public Product editProduct(@RequestBody Product request, int id){
+    public Product editProduct(@RequestBody Product request, @PathVariable int id){
         return productService.editProduct(request, id);
     }
 
     @DeleteMapping("/{id}")
     public void deleteProduct(@PathVariable int id){
         productService.deleteProduct(id);
-    }
-
-    public void updateProduct(Product o, Product r){
-        o.setName(r.getName());
-        o.setPrice(r.getPrice());
-        o.setWeightInGrams(r.getWeightInGrams());
     }
 }

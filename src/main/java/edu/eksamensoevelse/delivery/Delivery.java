@@ -22,4 +22,5 @@ public class Delivery {
     private LocalDate deliveryDate; //TODO: in future, maybe replace with actual Warehouse entity
     private String fromWarehouse;
     private String destination;
+
 }
