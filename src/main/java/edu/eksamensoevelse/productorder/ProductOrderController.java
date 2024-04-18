@@ -8,11 +8,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/productOrders")
-public class ProductController {
+public class ProductOrderController {
 
     ProductOrderService productOrderService;
 
-    public ProductController(ProductOrderService productOrderService) {
+    public ProductOrderController(ProductOrderService productOrderService) {
         this.productOrderService = productOrderService;
     }
 
